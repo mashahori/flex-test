@@ -1,0 +1,96 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333333;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.page__wrapper {
+  padding: 24px 16px;
+  margin: 0;
+}
+
+.page__list {
+  width: 279px;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.page__item {
+  padding-left: 112px;
+  margin-bottom: 12px;
+  background-image: url('../img/image-mobile.png');
+  background-repeat: no-repeat;
+}
+
+.page__image {
+  margin-right: 12px;
+  width: 400px;
+}
+
+.page__title {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.page__text {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .page__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 604px;
+  }
+
+  .page__item {
+    width: 290px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 114px;
+    margin-bottom: 24px;
+    background: linear-gradient(0deg, rgba(34, 34, 34, 0.85) 30.64%, rgba(38, 38, 38, 0) 56.61%),
+    url('../img/image-tablet.png');
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    height: 208px;
+    color: #ffffff;
+  }
+
+  .page__item:nth-child(odd) {
+    margin-right: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .page__list {
+    width: auto;
+    margin-left: 104px;
+    margin-right: 175px;
+    flex-wrap: nowrap;
+  }
+
+  .page__item {
+    background: linear-gradient(0deg, rgba(34, 34, 34, 0.85) 30.64%, rgba(38, 38, 38, 0) 56.61%),
+     url('../img/image-desktop.png');
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    width: 293px;
+    height: 196px;
+    padding-top: 102px;
+    margin-right: 23px;
+  }
+}
